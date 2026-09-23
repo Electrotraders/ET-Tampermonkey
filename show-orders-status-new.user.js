@@ -2,7 +2,7 @@
 // @name         Show Orders Status New
 // @namespace    Electrotraders
 // @author       Electrotraders
-// @version      1.0.0
+// @version      1.0.1
 // @grant        none
 // @description  In Neto Control Panel will show New orders, if any, on main menu by replicating the menu and badge, so it is more obvious to user
 // @match        https://www.electrotraders.com.au/_cpanel*
