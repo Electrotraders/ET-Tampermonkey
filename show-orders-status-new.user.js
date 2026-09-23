@@ -5,7 +5,7 @@
 // @version      1.0.0
 // @grant        none
 // @description  In Neto Control Panel will show New orders, if any, on main menu by replicating the menu and badge, so it is more obvious to user
-// @match        https://www.electrotraders.com.au/_cpanel/*
+// @match        https://www.electrotraders.com.au/_cpanel*
 // ==/UserScript==
 
 (function() {
