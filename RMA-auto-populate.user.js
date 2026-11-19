@@ -23,20 +23,17 @@
         const panel = document.createElement('div');
         panel.id = 'tm-rma-panel';
         panel.style.cssText = `
-            position: fixed;
-            top: 40px;
-            right: 200px;
-            z-index: 99999;
             background: #ffffff;
             border: 1px solid #d0d0d0;
             padding: 8px 12px;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
             font-family: Arial, sans-serif;
-            display: flex;
+            display: inline-flex;
             flex-direction: row;
             gap: 12px;
             align-items: center;
+            margin-bottom: 12px;
         `;
 
         panel.innerHTML = `
@@ -59,7 +56,10 @@
             </div>
         `;
 
-        document.body.appendChild(panel);
+        const targetForm = document.querySelector('form[name="itemForm"]');
+        if (targetForm) {
+            targetForm.parentNode.insertBefore(panel, targetForm);
+        }
 
         document.getElementById('tm-all-qty-btn').addEventListener('click', populateAllQty);
         document.getElementById('tm-apply-btn').addEventListener('click', applyRemainingFields);
