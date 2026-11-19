@@ -2,7 +2,7 @@
 // @name         RMA Auto-Populate
 // @namespace    Electrotraders
 // @author       Electrotraders
-// @version      1.0.0
+// @version      1.1.0
 // @grant        none
 // @description  Automates RMA form filling in Neto
 // @match        https://www.electrotraders.com.au/_cpanel/rma/addrma?order=*
